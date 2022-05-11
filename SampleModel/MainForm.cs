@@ -28,7 +28,6 @@ namespace SampleModel
             system.Calc();
             //
             DisplayInputValues();
-            lbY.Text = system.Output.ToString("F2");
             //
             chMainPlot.Series[0].Points.AddXY(system.Time, system.Output);
             chMainPlot.Series[1].Points.AddXY(system.Time, system.Input1);
@@ -147,11 +146,42 @@ namespace SampleModel
         private void DisplayInputValues() {
             tbX.Text = system.Input1.ToString("F2");
             tbX2.Text = system.Input2.ToString("F2");
+            textBoxTr.Text = system.Tap.ToString("F2");
+
         }
 
         private void MainForm_Load(object sender, EventArgs e) {
             DisplayManualMode();
             DisplayPIDValues();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void upTrClick(object sender, EventArgs e)
+        {
+            system.Tap += 0.1;
+            textBoxTr.Text = system.Tap.ToString("F2");
+        }
+
+        private void downTrClick(object sender, EventArgs e)
+        {
+            system.Tap -= 0.1;
+            textBoxTr.Text = system.Tap.ToString("F2");
+        }
+
+        private void upTr_Click(object sender, EventArgs e)
+        {
+            system.Tap += 0.1;
+            textBoxTr.Text = system.Tap.ToString("F2");
+        }
+
+        private void downTr_Click(object sender, EventArgs e)
+        {
+            system.Tap -= 0.1;
+            textBoxTr.Text = system.Tap.ToString("F2");
         }
     }
 }

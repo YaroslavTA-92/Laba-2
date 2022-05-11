@@ -36,6 +36,9 @@ namespace SampleModel
 
         public double Output { get; set; }
 
+        public double Tap = 2;
+
+        private double prev;
 
         public ControlSystem(double dt) {
             this.dt = dt;
@@ -46,7 +49,9 @@ namespace SampleModel
 
         public void Calc() {
             Output = Tank.Calc(Input1, Input2);
-            var e = SetPoint - Output;
+            var r = (dt * SetPoint + Tap * prev) / (Tap + dt);
+            prev = r;
+            var e = r - Output;
             var u = PID.Calc(e);
             if (!ManualMode) {
                 Input1 = u;
