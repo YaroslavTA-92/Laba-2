@@ -65,15 +65,7 @@ namespace SampleModel
 
         }
 
-        private void btnDn2_Click(object sender, EventArgs e) {
-            system.Input2 -= 1;
-            tbX2.Text = system.Input2.ToString("F2");
-        }
-
-        private void btnUp2_Click(object sender, EventArgs e) {
-            system.Input2 += 1;
-            tbX2.Text = system.Input2.ToString("F2");
-        }
+    
 
         private void btnSPDn_Click(object sender, EventArgs e) {
             system.SetPoint -= 1;
@@ -145,7 +137,6 @@ namespace SampleModel
 
         private void DisplayInputValues() {
             tbX.Text = system.Input1.ToString("F2");
-            tbX2.Text = system.Input2.ToString("F2");
             textBoxTr.Text = system.Tap.ToString("F2");
 
         }

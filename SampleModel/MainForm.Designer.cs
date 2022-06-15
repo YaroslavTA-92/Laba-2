@@ -41,11 +41,7 @@
             this.tmModel = new System.Windows.Forms.Timer(this.components);
             this.btnX1 = new System.Windows.Forms.Button();
             this.btnX10 = new System.Windows.Forms.Button();
-            this.btnDn2 = new System.Windows.Forms.Button();
-            this.btnUp2 = new System.Windows.Forms.Button();
-            this.tbX2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSPDn = new System.Windows.Forms.Button();
             this.btnSPUp = new System.Windows.Forms.Button();
@@ -199,36 +195,6 @@
             this.btnX10.UseVisualStyleBackColor = false;
             this.btnX10.Click += new System.EventHandler(this.btnX10_Click);
             // 
-            // btnDn2
-            // 
-            this.btnDn2.Location = new System.Drawing.Point(299, 142);
-            this.btnDn2.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDn2.Name = "btnDn2";
-            this.btnDn2.Size = new System.Drawing.Size(20, 19);
-            this.btnDn2.TabIndex = 14;
-            this.btnDn2.Text = "<";
-            this.btnDn2.UseVisualStyleBackColor = true;
-            this.btnDn2.Click += new System.EventHandler(this.btnDn2_Click);
-            // 
-            // btnUp2
-            // 
-            this.btnUp2.Location = new System.Drawing.Point(376, 143);
-            this.btnUp2.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUp2.Name = "btnUp2";
-            this.btnUp2.Size = new System.Drawing.Size(20, 19);
-            this.btnUp2.TabIndex = 13;
-            this.btnUp2.Text = ">";
-            this.btnUp2.UseVisualStyleBackColor = true;
-            this.btnUp2.Click += new System.EventHandler(this.btnUp2_Click);
-            // 
-            // tbX2
-            // 
-            this.tbX2.Location = new System.Drawing.Point(324, 142);
-            this.tbX2.Margin = new System.Windows.Forms.Padding(2);
-            this.tbX2.Name = "tbX2";
-            this.tbX2.Size = new System.Drawing.Size(48, 20);
-            this.tbX2.TabIndex = 12;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -239,16 +205,6 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "T:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(335, 126);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "X2:";
             // 
             // label3
             // 
@@ -497,12 +453,8 @@
             this.Controls.Add(this.btnSPDn);
             this.Controls.Add(this.btnSPUp);
             this.Controls.Add(this.tbSetpoint);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnDn2);
-            this.Controls.Add(this.btnUp2);
-            this.Controls.Add(this.tbX2);
             this.Controls.Add(this.btnX10);
             this.Controls.Add(this.btnX1);
             this.Controls.Add(this.chMainPlot);
@@ -536,11 +488,7 @@
         private System.Windows.Forms.Timer tmModel;
         private System.Windows.Forms.Button btnX1;
         private System.Windows.Forms.Button btnX10;
-        private System.Windows.Forms.Button btnDn2;
-        private System.Windows.Forms.Button btnUp2;
-        private System.Windows.Forms.TextBox tbX2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSPDn;
         private System.Windows.Forms.Button btnSPUp;
